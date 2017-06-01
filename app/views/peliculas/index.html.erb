@@ -32,7 +32,7 @@
 			<div class="year">
 				<h4 class="number">Lo mejor de 2017</h4>
 				<% @peliculas.each do |peli| %>
-					<% if peli.year === 2017 && peli.stars === 5 %>
+					<% if peli.year == 2017 && peli.stars == 5 %>
 						<div class="peliculas">
 							<h5 class="titulo"><%= link_to peli.name, peli %></h5>
 						</div>
@@ -45,7 +45,7 @@
 			<div class="top-time">
 				<h4 class="top-time-title">Top Movies of All Times</h4>
 				<% @peliculas.each do |peli2| %>
-					<% if peli2.stars === 5 %>
+					<% if peli2.stars == 5 %>
 				<div class="peliculas">
 					<h5 class="titulo"><%= link_to peli2.name, peli2 %></h5>
 				</div>
@@ -59,7 +59,7 @@
 		<div class="year">
 			<h4 class="number">Lo mejor de 2016</h4>
 				<% @peliculas.each do |peli3| %>
-					<% if peli3.year === 2016 && peli3.stars === 5 %>
+					<% if peli3.year == 2016 && peli3.stars == 5 %>
 						<div class="peliculas">
 							<h5 class="titulo"><%= link_to peli3.name, peli3 %></h5>
 						</div>
